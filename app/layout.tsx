@@ -1,3 +1,4 @@
+import NavBar from "@/app/ui/navigation/NavBar";
 import type { Layout } from "@/app/lib/definitions.types";
 import type { Metadata } from "next";
 import { inter } from "@/app/ui/fonts";
@@ -11,7 +12,12 @@ export const metadata: Metadata = {
 const RootLayout: Layout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <NavBar />
+        </header>
+        {children}
+      </body>
     </html>
   );
 };

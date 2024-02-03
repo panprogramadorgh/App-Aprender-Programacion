@@ -1,0 +1,37 @@
+.navbar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgb(var(--background-rgb), 0.6);
+  outline: 0.094rem solid rgba(var(--foreground-rgb), 0.25);
+}
+
+.logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-entries {
+  flex-grow: 5;
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-entry {
+  color: rgb(var(--foreground-rgb));
+  opacity: 0.6;
+  transition: all 0.1s;
+}
+.nav-entry:hover {
+  opacity: 1;
+}
+
+.search-button-container {
+  flex-grow: 3;
+  text-align: center;
+}
