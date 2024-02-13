@@ -1,11 +1,13 @@
 :root {
-  --border-radius: 12px;
+  --border-radius: 7px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+
+  --background-code-rgb: 10, 10, 10;
 
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;

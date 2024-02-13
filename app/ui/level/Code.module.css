@@ -1,0 +1,29 @@
+.code {
+  min-height: 150px;
+  min-width: 300px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.code::-webkit-scrollbar {
+  display: block;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+}
+
+.code::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: rgba(var(--foreground-rgb), 0.6);
+  border-radius: 10px;
+}
+
+.code::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+}

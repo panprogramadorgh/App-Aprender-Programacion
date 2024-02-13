@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
 import Logo from "@/app/ui/branding/Logo";
-import SearchButton from "../search/SearchButton";
+// import SearchButton from "../search/SearchButton";
 import styles from "@/app/ui/navigation/NavBar.module.css";
 
 const MainNavBar: FunctionComponent<{}> = () => {
@@ -31,7 +31,7 @@ const MainNavBar: FunctionComponent<{}> = () => {
         })}
       </ul>
       <div className={styles["search-button-container"]}>
-        <SearchButton />
+        {/* <SearchButton /> */}
       </div>
     </div>
   );
