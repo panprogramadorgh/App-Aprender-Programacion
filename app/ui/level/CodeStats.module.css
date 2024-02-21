@@ -1,0 +1,10 @@
+.code-stats {
+  font-size: 0.8rem;
+}
+.code-stats span {
+  display: inline-block;
+  padding: 4px;
+  margin: 0 3px;
+  border-radius: var(--border-radius);
+  background-color: rgba(var(--foreground-rgb), 0.1);
+}

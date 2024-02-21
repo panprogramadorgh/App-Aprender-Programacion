@@ -1,20 +1,18 @@
 .code {
-  min-height: 150px;
-  min-width: 300px;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
+  /* white-space: nowrap; */
+  overflow: auto;
   font-family: inherit;
   font-size: 1rem;
   background-color: transparent;
   border: none;
   outline: none;
+  resize: none;
 }
 .code::-webkit-scrollbar {
   display: block;
-  cursor: pointer;
   width: 8px;
   height: 8px;
+  background-color: transparent;
 }
 
 .code::-webkit-scrollbar-thumb {

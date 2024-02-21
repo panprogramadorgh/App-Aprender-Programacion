@@ -9,13 +9,12 @@ export default function Page() {
         <MainNavBar />
       </header>
       <section>
-        <h1 className={styles.title}>Hello World</h1>
-        <CodeBox label="src/main.tsx" icon="TypeScript.svg" />
+        <h1 className={styles.title}>Learn to Code !</h1>
         <CodeBox
           editable
           label="src/index.mjs"
           icon="JavaScript.svg"
-          initialContent={`const name = "Alvaro"`}
+          initialContent={['const name = "Alvaro"', "adios"]}
         />
       </section>
     </main>

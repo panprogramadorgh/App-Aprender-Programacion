@@ -6,7 +6,7 @@ import styles from "@/app/ui/level/CodeBox.module.css";
 interface Props {
   label: string;
   icon?: string;
-  initialContent?: string;
+  initialContent: string | string[];
   className?: string;
   showLineNumber?: boolean;
   editable?: boolean;
@@ -14,7 +14,7 @@ interface Props {
 const ProgramingEnv: FunctionComponent<Props> = ({
   label,
   icon,
-  initialContent,
+  initialContent = "",
   className,
   showLineNumber,
   editable,
@@ -39,13 +39,19 @@ const ProgramingEnv: FunctionComponent<Props> = ({
         }`.trim()}
       >
         {editable ? (
-          <Code code={initialContent} />
-        ) : (
+          <Code
+            filename={label.split("/").reverse()[0]}
+            code={initialContent}
+          />
+        ) : // Si no es editable primero se verifica si es un string o bien un array de strings. Si es un array de strings se renderiza un array jsx
+        initialContent instanceof Array ? (
           <>
-            <span>// primera linea de codigo</span>
-            <span>// segunda linea de codigo</span>
-            <span>// tercera linea de codigo</span>
+            {initialContent.map((line, index) => (
+              <span key={index}>{line}</span>
+            ))}
           </>
+        ) : (
+          <span>{initialContent}</span>
         )}
       </div>
     </div>
